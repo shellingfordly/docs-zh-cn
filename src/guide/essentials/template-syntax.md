@@ -64,21 +64,19 @@ Vue 使用一种基于 HTML 的模板语法，使我们能够声明式地将其�
 
 > 接下来的指引中，我们都将在示例中使用简写语法，因为这是在实际开发中更常见的用法。
 
-<!-- TODO: translation -->
+### 同名简写 <sup class="vt-badge" data-text="3.4+" /> {#same-name-shorthand}
 
-### Same-name Shorthand <sup class="vt-badge" data-text="3.4+" /> {#same-name-shorthand}
-
-If the attribute has the same name with the JavaScript value being bound, the syntax can be further shortened to omit the attribute value:
+如果 attribute 的名称与绑定的 JavaScript 值的名称相同，那么可以进一步简化语法，省略 attribute 值：
 
 ```vue-html
-<!-- same as :id="id" -->
+<!-- 与 :id="id" 相同 -->
 <div :id></div>
 
-<!-- this also works -->
+<!-- 这也同样有效 -->
 <div v-bind:id></div>
 ```
 
-This is similar to the property shorthand syntax when declaring objects in JavaScript. Note this is a feature that is only available in Vue 3.4 and above.
+这与在 JavaScript 中声明对象时使用的属性简写语法类似。请注意，这是一个只在 Vue 3.4 及以上版本中可用的特性。
 
 ### 布尔型 Attribute {#boolean-attributes}
 
